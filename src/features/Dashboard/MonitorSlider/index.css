@@ -1,0 +1,42 @@
+.monitor-screen {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #000;
+  border: 15px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .monitor-screen {
+    border-width: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .monitor-screen {
+    border-width: 5px;
+    border-radius: 5px;
+  }
+}

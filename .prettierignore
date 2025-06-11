@@ -1,0 +1,8 @@
+/node_modules/**
+/dist/**
+/tests/unit/coverage/**
+/cypress/
+/.next/
+/build
+/package-lock.json
+/package.json
