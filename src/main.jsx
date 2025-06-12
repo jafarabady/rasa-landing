@@ -7,18 +7,16 @@ import { HelmetProvider } from 'react-helmet-async'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
-
+  <HelmetProvider>
+    <App />
+  </HelmetProvider>
 )
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
       .register('/sw.js')
-      .then((registration) => {
+      .then(() => {
         console.log('ServiceWorker registration successful')
       })
       .catch((err) => {
