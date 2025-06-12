@@ -1,5 +1,5 @@
 import { Button } from 'antd'
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts'
 import { downloadChartAsPDF } from '../../../utils/chart-downloader'
 
@@ -19,8 +19,13 @@ export const CustomPieChart = () => {
 
   return (
     <div className="w-full">
-      <Button className='mb-4' onClick={() => downloadChartAsPDF(chartRef, { title: 'توزیع پست‌ها بر اساس کشورها' })}>دانلود PDF نمودار دایره ای</Button>
-      <h2 style={{ textAlign: 'center' }}>توزیع پست‌ها بر اساس کشورها</h2>
+      <Button
+        className="mb-4"
+        onClick={() => downloadChartAsPDF(chartRef, { title: 'توزیع پست‌ها بر اساس کشورها' })}
+      >
+        دانلود PDF نمودار دایره ای
+      </Button>
+      <h2 style={{ textAlign: 'center' }}>تحلیل بازدید بر اساس کشورها</h2>
       <div ref={chartRef} style={{ width: '100%', height: 350 }}>
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
