@@ -1,21 +1,27 @@
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts'
+import { Button } from 'antd'
+import { useEffect, useRef } from 'react'
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts'
+import { downloadChartAsPDF } from '../../../utils/chart-downloader'
 
 const pieData = [
-  { name: 'اینستاگرام', value: 27 },
-  { name: 'تلگرام', value: 25 },
-  { name: 'واتساپ', value: 18 },
-  { name: 'لینکدین', value: 15 },
-  { name: 'فیسبوک', value: 10 },
-  { name: 'یوتیوب', value: 5 },
+  { name: 'ایران', value: 27 },
+  { name: 'ترکیه', value: 25 },
+  { name: 'روسیه', value: 18 },
+  { name: 'آلمان', value: 15 },
+  { name: 'امارات', value: 10 },
+  { name: 'آمریکا', value: 5 },
 ]
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#A28FD0', '#FF6666']
 
 export const CustomPieChart = () => {
+  const chartRef = useRef(null)
+
   return (
     <div className="w-full">
-      <h2 style={{ textAlign: 'center' }}>توزیع پست‌ها بر اساس پلتفرم</h2>
-      <div style={{ width: '100%', height: 350 }}>
+      <Button className='mb-4' onClick={() => downloadChartAsPDF(chartRef, { title: 'توزیع پست‌ها بر اساس کشورها' })}>دانلود PDF نمودار دایره ای</Button>
+      <h2 style={{ textAlign: 'center' }}>توزیع پست‌ها بر اساس کشورها</h2>
+      <div ref={chartRef} style={{ width: '100%', height: 350 }}>
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie

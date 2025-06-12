@@ -6,7 +6,7 @@ function Dashboard() {
     <>
       <PageMetadata
         title="صفحه اصلی | پروژه"
-        description="صفحه اصلی پروژه="
+        description="صفحه اصلی پروژه"
         keywords="پروژه, برنامه نویسی"
       />
       <MonitorSlider />

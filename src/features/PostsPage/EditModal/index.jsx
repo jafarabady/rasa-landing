@@ -60,7 +60,7 @@ function EditModal({ open = false, initialData, onClose = () => {} }) {
             <Input />
           </Form.Item>
           <Form.Item label="متن" name="body">
-            <Input.TextArea />
+            <Input.TextArea rows={4} />
           </Form.Item>
           <Form.Item>
             <Space>

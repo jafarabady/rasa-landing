@@ -15,7 +15,7 @@ const MonitorSlider = () => {
       <Carousel autoplay arrows autoplaySpeed={5000}>
         {images.map((image, index) => (
           <div key={index} className="slide-wrapper">
-            <img src={image} alt={`Slide ${index + 1}`} className="responsive-slide-img" />
+            <img loading='lazy' src={image} alt={`Slide ${index + 1}`} className="responsive-slide-img" />
           </div>
         ))}
       </Carousel>

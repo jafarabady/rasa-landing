@@ -33,7 +33,11 @@ function RootLayout() {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken()
-
+  const backgroundColor = useMemo(() => {
+    if (location.pathname === '/new-post') return 'radial-gradient(circle, rgba(22, 119, 255, 0.71) 0%, #ffffff 100%)'
+    return colorBgContainer
+  }, [location, colorBgContainer])
+  
   const selectedKey = useMemo(() => {
     return menuItems.findIndex((item) => item.path === location.pathname) + 1
   }, [location])
@@ -117,7 +121,7 @@ function RootLayout() {
               padding: 8,
               minHeight: '85vh',
               height: 'auto',
-              background: colorBgContainer,
+              background: backgroundColor,
               borderRadius: borderRadiusLG,
             }}
           >

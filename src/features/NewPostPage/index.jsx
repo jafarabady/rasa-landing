@@ -1,5 +1,6 @@
 import { Button, Card, Form, Input, InputNumber, notification, Space } from 'antd'
 import usePostStore from '../../store/postStore'
+import PageMetadata from '../../components/PageMetadata'
 
 const validationRules = {
   id: [
@@ -36,7 +37,13 @@ function NewPostPage() {
   }
 
   return (
-    <div className="w-full flex items-center justify-center">
+    <>
+      <PageMetadata
+        title="پست جدید | پروژه"
+        description="پست جدید پروژه"
+        keywords="پروژه, برنامه نویسی"
+      />
+      <div className="w-full flex items-center justify-center">
       {contextHolder}
       <Form
         form={form}
@@ -46,7 +53,7 @@ function NewPostPage() {
         onFinish={onFinish}
         autoComplete="off"
       >
-        <Card>
+        <Card className='backdrop-blur-lg bg-[#FFF]/40'>
           <Form.Item label="شناسه" name="id" rules={validationRules.id}>
             <InputNumber min={1} style={{ width: '100%' }} />
           </Form.Item>
@@ -74,7 +81,9 @@ function NewPostPage() {
           </Form.Item>
         </Card>
       </Form>
-    </div>
+     </div>
+    </>
+
   )
 }
 
