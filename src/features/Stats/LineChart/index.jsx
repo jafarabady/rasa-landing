@@ -24,8 +24,15 @@ const lineData = [
 export const CustomLineChart = () => {
   const chartRef = useRef(null)
   return (
-    <div className="w-full">
-       <Button className='mb-4'  onClick={() => downloadChartAsPDF(chartRef, { title: 'توزیع پست‌ها بر اساس کشورها' })}>دانلود PDF نمودار خطی</Button>
+   <div className="w-full">
+      <Button
+        className="mb-4"
+        onClick={() =>
+          downloadChartAsPDF(chartRef, { title: 'تحلیل بازدید پست‌ها در روزهای هفته' })
+        }
+      >
+        دانلود PDF نمودار خطی
+      </Button>
       <h2 style={{ textAlign: 'center' }}>تحلیل بازدید پست‌ها در روزهای هفته</h2>
       <div ref={chartRef} style={{ width: '100%', height: 400 }}>
         <ResponsiveContainer width="100%" height="100%">
