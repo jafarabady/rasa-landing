@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import logo from '../logo.svg'
+import logo from '../assets/images/logo.svg'
 import { Layout, Menu, theme, Drawer, Button } from 'antd'
 import {
   HomeOutlined,
