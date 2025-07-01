@@ -1,0 +1,12 @@
+.intro{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: -50%;
+    right: -50%;
+    background: #1C2333;
+    background: radial-gradient(circle, #05a043 0%, #1c2333 60%);
+    height: 1000px;
+    width: 1200px;
+    will-change: transform, opacity;
+}

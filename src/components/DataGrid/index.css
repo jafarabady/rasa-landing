@@ -1,8 +1,0 @@
-.resizeable-table {
-  table-layout: auto !important;
-  width: 100% !important;
-}
-
-.resizeable-table .ant-table-cell {
-  white-space: nowrap !important;
-}

@@ -1,5 +1,7 @@
 import PageMetadata from '../../components/PageMetadata'
-import MonitorSlider from './MonitorSlider'
+import Button from '../../components/Button'
+import ServicesIntroBanner from './components/ServicesIntroBanner'
+import './index.css'
 
 function Dashboard() {
   return (
@@ -9,7 +11,10 @@ function Dashboard() {
         description="صفحه اصلی پروژه"
         keywords="پروژه, برنامه نویسی"
       />
-      <MonitorSlider />
+      <div className="relative h-full">
+        <div className="intro" />
+        <ServicesIntroBanner />
+      </div>
     </>
   )
 }
