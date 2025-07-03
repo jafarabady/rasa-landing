@@ -117,4 +117,9 @@ html, body {
   font-family: PeydaWebFaNum !important;
   background-color: #1C2333;
   color: white;
+  padding: 0;
+  direction: rtl;
+  margin: 0;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }

@@ -12,11 +12,22 @@
 .features:before{
     content: "";
     position: absolute;
-    z-index: 0;
+    z-index: -100;
     top: 0;
     left: -35%;
     background: #1C2333;
     background: radial-gradient(circle, #05a043 0%, #1c2333 60%);
     height: 450px;
     width: 600px;
+}
+.customer:before{
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 90%;
+    left: -10%;
+    background: #1C2333;
+    background: radial-gradient(circle, #05a043 0%, #1c2333 35%);
+    height: 150px;
+    width: 300px;
 }
