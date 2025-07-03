@@ -8,4 +8,9 @@ const features = [
   { text: 'زیرساخت High Available', icon: cloud },
   { text: 'امنیت داخلی و خارجی', icon: shield },
 ]
-export { features }
+const stats = [
+  { text: 'درخواست های سرور', value: '3,455,545', icon: service },
+  { text: 'پاد های ساخته شده', value: '400', icon: time },
+  { text: 'آپدیت سرویس ها', value: '3,000', icon: cloud },
+]
+export { features, stats }

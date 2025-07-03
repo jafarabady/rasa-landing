@@ -1,6 +1,9 @@
 .card{
     background: linear-gradient(to bottom, #29343e 0%, #1c2333 50%);
 }
+.card-stats{
+    background: linear-gradient(to bottom, #2d3741 0%, #202736 50%);
+}
 .inner-circle{
     border-radius: 100px;
     display: flex;
