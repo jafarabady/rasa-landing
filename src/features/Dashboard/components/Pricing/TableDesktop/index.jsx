@@ -62,7 +62,7 @@ const getUnit = (rowIdx, colIdx) => {
   return ''
 }
 
-const Table = () => {
+const TableDesktop = () => {
   return (
     <div className="overflow-auto">
       <table className="min-w-full text-center border-separate border-spacing-0">
@@ -138,4 +138,4 @@ const Table = () => {
   )
 }
 
-export default Table
+export default TableDesktop

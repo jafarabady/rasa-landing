@@ -1,5 +1,5 @@
-import React from 'react'
-import Table from './Table'
+import TableMobile from './TableMobile'
+import TableDesktop from './TableDesktop'
 
 function Pricing() {
   return (
@@ -12,7 +12,10 @@ function Pricing() {
         با ۱۰۰ هزار تومان اعتبار هدیه از طرف ما، شروع کنید.
       </span>
       <div className="hidden md:block">
-        <Table />
+        <TableDesktop />
+      </div>
+      <div className="md:hidden">
+        <TableMobile />
       </div>
     </>
   )
