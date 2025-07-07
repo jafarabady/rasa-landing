@@ -6,6 +6,9 @@ import Container from '../../components/Container'
 import CustomerApps from './components/CustomerApps'
 import Stats from './components/Stats'
 import Pricing from './components/Pricing'
+import OurServices from './components/OurServices'
+import CreatingProject from './components/CreatingProject'
+import lineProject from '../../assets/images/line-project.png'
 
 function Home() {
   return (
@@ -31,7 +34,16 @@ function Home() {
         <div className="price z-10 relative flex justify-center items-center flex-col gap-4 pt-20">
           <Pricing />
         </div>
+        <div className="services z-10 relative flex justify-center items-center flex-col gap-4 pt-20">
+          <OurServices />
+        </div>
       </Container>
+      <div className="hidden md:flex project">
+        <div className="absolute top-0 z-0">
+          <img draggable="false" src={lineProject} alt={'lineProject'} />
+        </div>
+        <CreatingProject />
+      </div>
     </>
   )
 }

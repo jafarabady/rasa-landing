@@ -14,7 +14,7 @@ function Pricing() {
       <div className="hidden md:block">
         <TableDesktop />
       </div>
-      <div className="md:hidden">
+      <div className="w-full md:hidden">
         <TableMobile />
       </div>
     </>

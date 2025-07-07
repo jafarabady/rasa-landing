@@ -8,7 +8,12 @@ function Card({ type, icon, text, value }) {
       {type === 'stats' && <img src={background} alt="background" className="absolute" />}
       <div className={`${type === 'stats' ? 'w-20 h-20' : 'w-16 h-16'} outer-circle`}>
         <div className={`${type === 'stats' ? 'w-[72px] h-[72px]' : 'w-14 h-14'} inner-circle`}>
-          <img src={icon} alt={text} className="w-10 h-10" draggable="false" />
+          <img
+            src={icon}
+            alt={text}
+            className={`${type === 'stats' ? 'w-14 h-14' : 'w-10 h-10'}`}
+            draggable="false"
+          />
         </div>
       </div>
       {type === 'stats' && value && (

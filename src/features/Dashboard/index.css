@@ -57,9 +57,31 @@
     width: 100%;
     background: linear-gradient(to top, #1C2333 0%, #292F3C 75%);
 }
+.project {
+    position: relative;
+    z-index: 10;
+    padding-top: 80px;
+    margin-top: 120px;
+    width: 100%;
+}
+.services:before {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    right: -40%;
+    background: #1C2333;
+    background: radial-gradient(circle, #05a043 0%, #1c2333 62%);
+    height: 800px;
+    width: 800px;
+}
 
 @media (max-width: 768px) {
     .features::before {
+        content: none;
+        display: none;
+    }
+    .services::before {
         content: none;
         display: none;
     }
@@ -72,7 +94,7 @@
         content: "";
         position: absolute;
         z-index: -10;
-        top: 100%;
+        top: 20%;
         left: -10%;
         background: #1C2333;
         background: radial-gradient(circle, #05a043 0%, #1c2333 25%);

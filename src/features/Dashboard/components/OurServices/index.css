@@ -1,0 +1,29 @@
+.service{
+    background: #48eb89;
+    background: -webkit-linear-gradient(90deg, #48eb89 0%, #22c498 100%);
+    background: linear-gradient(90deg, #48eb89 0%, #22c498 100%);
+}
+.circle{
+    background: #c5ffe8;
+    background: -webkit-linear-gradient(0deg, #c5ffe8 0%, #ffffff 100%);
+    background: linear-gradient(0deg, #c5ffe8 0%, #ffffff 100%);
+}
+.border{
+
+
+}
+.line:before{
+    content: '';
+    left: -6%;
+    position: absolute;
+    width: 1px;
+    height: 125px;
+    background: white;
+}
+@media (max-width: 768px) {
+    .line:before{
+
+        left: -13%;
+
+    }
+}

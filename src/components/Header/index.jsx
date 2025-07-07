@@ -10,7 +10,7 @@ const menuItems = [
 ]
 function Header() {
   return (
-    <header className="w-full bg-dark h-[68px] fixed top-0 z-[100]">
+    <div className="w-full bg-dark h-[68px] fixed top-0 z-[100]">
       <div className="w-full px-4 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1260px] 2xl:max-w-[1440px] h-full flex justify-between items-center">
         <div className="w-[180px]">
           <img className="" src={logo} alt="cubaar-logo" />
@@ -26,7 +26,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </div>
   )
 }
 
