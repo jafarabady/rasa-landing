@@ -1,25 +1,25 @@
 const headColumnColors = [
-  'bg-[#2E3846]',
-  'bg-[#232F3D]',
-  'bg-[#2E3846]',
-  'bg-[#232F3D]',
-  'bg-[#2E3846]',
-  'bg-[#232F3D]',
-  'bg-[#2E3846]',
-  'bg-[#232F3D]',
-  'bg-[#2E3846]',
+  'bg-oddHeaderColumn',
+  'bg-evenHeaderColumn',
+  'bg-oddHeaderColumn',
+  'bg-evenHeaderColumn',
+  'bg-oddHeaderColumn',
+  'bg-evenHeaderColumn',
+  'bg-oddHeaderColumn',
+  'bg-evenHeaderColumn',
+  'bg-oddHeaderColumn',
 ]
 
 const bodyColumnColors = [
-  'bg-[#273140]',
-  'bg-[#1c2333]',
-  'bg-[#273140]',
-  'bg-[#1c2333]',
-  'bg-[#273140]',
-  'bg-[#1c2333]',
-  'bg-[#273140]',
-  'bg-[#1c2333]',
-  'bg-[#273140]',
+  'bg-oddBgBodyTable',
+  'bg-evenBgBodyTable',
+  'bg-oddBgBodyTable',
+  'bg-evenBgBodyTable',
+  'bg-oddBgBodyTable',
+  'bg-evenBgBodyTable',
+  'bg-oddBgBodyTable',
+  'bg-evenBgBodyTable',
+  'bg-oddBgBodyTable',
 ]
 
 const columns = [
@@ -113,13 +113,13 @@ const TableDesktop = () => {
                     >
                       <div className={` ${isFirst ? 'text-start' : 'text-center'}`}>
                         {unit && (
-                          <div className="inline-block text-[10px] font-semibold text-[#6c7280] pl-[2px]">
+                          <div className="inline-block text-[10px] font-semibold text-unit pl-[2px]">
                             {unit}
                           </div>
                         )}
                         <div
                           className={`${highlightPrice ? 'text-primary font-black' : ''} ${
-                            isSubtlePrice ? 'text-[#808592] font-medium' : ''
+                            isSubtlePrice ? 'text-darkgray font-medium' : ''
                           } ${isFirstCol ? 'text-xs ' : ''} inline-block`}
                         >
                           {cell}
