@@ -9,6 +9,8 @@ import Pricing from './components/Pricing'
 import OurServices from './components/OurServices'
 import CreatingProject from './components/CreatingProject'
 import lineProject from '../../assets/images/line-project.png'
+import CommandLine from './components/CommandLine'
+import Monitoring from './components/Monitoring'
 
 function Home() {
   return (
@@ -44,6 +46,14 @@ function Home() {
         </div>
         <CreatingProject />
       </div>
+      <Container>
+        <div className="command-line z-10 relative flex justify-center items-center flex-col gap-4 pt-40 mt-40 md:mt-0">
+          <CommandLine />
+        </div>
+        <div className="z-10 relative flex justify-center items-center flex-col gap-4 pt-40 mt-40 md:mt-0">
+          <Monitoring />
+        </div>
+      </Container>
     </>
   )
 }

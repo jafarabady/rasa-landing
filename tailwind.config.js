@@ -23,6 +23,7 @@ module.exports = {
         bgBadge: '#0CAE7433',
         unit: '#6c7280',
         projectCardTitle: '#ACACAC',
+        commandLine: '#c3c6cd',
       },
     },
   },
