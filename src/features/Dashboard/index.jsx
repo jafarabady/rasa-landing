@@ -20,7 +20,11 @@ function Home() {
   const isMobile = useDeviceType()
   return (
     <>
-      <PageMetadata title="کوبار" description="صفحه اصلی پروژه" keywords="پروژه, کوبار" />
+      <PageMetadata
+        title="کوبار | خدمات ابری"
+        description="صفحه اصلی پروژه خدمات ابری کوبار"
+        keywords="خدمات ابری, کوبار"
+      />
       <Container className="pt-20 md:pt-40">
         <div className="intro relative h-full">
           <ServicesIntroBanner />
