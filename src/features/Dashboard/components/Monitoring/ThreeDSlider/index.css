@@ -1,0 +1,14 @@
+.glass-wrapper {
+    min-width: 290px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #494f5c;
+    padding: 16px 16px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.swiper-3d .swiper-slide-shadow-right{
+    background-image: unset!important;
+}
+.swiper-3d .swiper-slide-shadow-left{
+    background-image: unset!important;
+}

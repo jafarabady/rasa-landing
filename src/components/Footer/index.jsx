@@ -12,7 +12,7 @@ function Footer() {
             <img className="" src={logo} alt="cubaar-logo" />
           </div>
           {media.map((item) => (
-            <Link className="text-sm text-gray" to={item.url}>
+            <Link key={item.title} className="text-sm text-gray" to={item.url}>
               {item.title}
             </Link>
           ))}
@@ -20,7 +20,7 @@ function Footer() {
         <div className=" flex flex-col gap-3">
           <div className=" text-primary">دسترسی سریع</div>
           {quickAccess.map((item) => (
-            <Link className="text-sm text-gray" to={item.url}>
+            <Link key={item.title} className="text-sm text-gray" to={item.url}>
               {item.title}
             </Link>
           ))}
@@ -28,7 +28,7 @@ function Footer() {
         <div className=" flex flex-col gap-3">
           <div className=" text-primary">سرویس ها</div>
           {services.map((item) => (
-            <Link className="text-sm text-gray" to={item.url}>
+            <Link key={item.title} className="text-sm text-gray" to={item.url}>
               {item.title}
             </Link>
           ))}

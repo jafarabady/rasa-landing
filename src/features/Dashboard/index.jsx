@@ -9,10 +9,15 @@ import Pricing from './components/Pricing'
 import OurServices from './components/OurServices'
 import CreatingProject from './components/CreatingProject'
 import lineProject from '../../assets/images/line-project.png'
+import lineFaq from '../../assets/images/line-faq.png'
 import CommandLine from './components/CommandLine'
 import Monitoring from './components/Monitoring'
+import { useDeviceType } from '../../hooks/use-device-type'
+import Technologies from './components/Technologies'
+import FAQ from './components/FAQ'
 
 function Home() {
+  const isMobile = useDeviceType()
   return (
     <>
       <PageMetadata title="کوبار" description="صفحه اصلی پروژه" keywords="پروژه, کوبار" />
@@ -50,10 +55,32 @@ function Home() {
         <div className="command-line z-10 relative flex justify-center items-center flex-col gap-4 pt-40 mt-40 md:mt-0">
           <CommandLine />
         </div>
-        <div className="z-10 relative flex justify-center items-center flex-col gap-4 pt-40 mt-40 md:mt-0">
+      </Container>
+      <Container isActiveContainer={!isMobile}>
+        <div className="monitoring z-10 relative flex justify-center items-center flex-col gap-4 pt-40  md:mt-0">
           <Monitoring />
         </div>
       </Container>
+      <Container>
+        <div className="technologies z-10 relative flex justify-center items-center flex-col gap-4 mt-40">
+          <Technologies />
+        </div>
+      </Container>
+      <div className="relative mt-40 w-full">
+        <div className="hidden md:block absolute top-0 left-0 w-full z-0">
+          <img
+            draggable="false"
+            src={lineFaq}
+            alt="lineProject"
+            className="pointer-events-none w-full"
+          />
+        </div>
+        <div className="relative z-10">
+          <Container>
+            <FAQ />
+          </Container>
+        </div>
+      </div>
     </>
   )
 }

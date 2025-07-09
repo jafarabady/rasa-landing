@@ -1,0 +1,10 @@
+.logo-background{
+    background: #1c2333;
+    background: -webkit-linear-gradient(0deg, #1c2333 0%, #4f5461 100%);
+    background: linear-gradient(0deg, #1c2333 0%, #4f5461 100%);
+}
+.cubaar-background{
+    background: #48eb89;
+    background: -webkit-linear-gradient(90deg, #48eb89 0%, #22c498 100%);
+    background: linear-gradient(90deg, #48eb89 0%, #22c498 100%);
+}

@@ -15,7 +15,9 @@ function CreatingProject() {
         <div className="flex justify-center items-center">
           <div className="flex flex-col gap-16">
             {projectSteps.map((item) => (
-              <ProjectCard stepText={item.step} text={item.text} />
+              <React.Fragment key={item.step}>
+                <ProjectCard stepText={item.step} text={item.text} />
+              </React.Fragment>
             ))}
           </div>
           <div className="relative z-10">

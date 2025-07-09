@@ -75,6 +75,17 @@
     height: 800px;
     width: 800px;
 }
+.monitoring:before {
+    content: "";
+    position: absolute;
+    z-index: -100;
+    top: 15%;
+    left: -30%;
+    background: #1C2333;
+    background: radial-gradient(circle, #05a043 0%, #1c2333 60%);
+    height: 600px;
+    width: 600px;
+}
 .command-line:before {
     content: "";
     position: absolute;
@@ -85,6 +96,17 @@
     background: radial-gradient(circle, #05a043 0%, #1c2333 50%);
     height: 300px;
     width: 300px;
+}
+.technologies:before {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: -25%;
+    right: -35%;
+    background: #1C2333;
+    background: radial-gradient(circle, #05a043 0%, #1c2333 60%);
+    height: 800px;
+    width: 800px;
 }
 
 @media (max-width: 768px) {
@@ -97,6 +119,14 @@
         display: none;
     }
     .services::before {
+        content: none;
+        display: none;
+    }
+    .monitoring:before {
+        content: none;
+        display: none;
+    }
+    .technologies:before {
         content: none;
         display: none;
     }

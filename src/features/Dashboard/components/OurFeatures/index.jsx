@@ -1,3 +1,4 @@
+import React from 'react'
 import { features } from '../../lib'
 import Card from '../../../../components/Card'
 
@@ -10,7 +11,9 @@ function OurFeatures() {
       </span>
       <div className="pt-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-auto">
         {features.map((feature) => (
-          <Card text={feature.text} icon={feature.icon} />
+          <React.Fragment key={feature.text}>
+            <Card text={feature.text} icon={feature.icon} />
+          </React.Fragment>
         ))}
       </div>
     </>
