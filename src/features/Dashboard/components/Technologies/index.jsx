@@ -20,7 +20,7 @@ function Technologies() {
             }`}
           >
             <img
-              className={`${index === 11 ? 'w-[82px] h-[82px]' : 'w-14 h-14 grayscale opacity-50 transition duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-105'} object-contain `}
+              className={`${index === 11 ? 'w-[82px] h-[82px]' : 'w-14 h-14 grayscale opacity-50  hover:grayscale-0 hover:opacity-100 '} object-contain transition duration-300 hover:scale-105 `}
               src={item.src}
               alt=""
             />
