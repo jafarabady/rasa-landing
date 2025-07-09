@@ -1,7 +1,7 @@
 import './index.css'
 import { services } from '../../lib'
 import { useDeviceType } from '../../../../hooks/use-device-type'
-import servicesBackground from '../../../../assets/images/services-background.svg'
+import servicesBackground from '../../../../assets/images/services/services-background.svg'
 
 function OurServices() {
   const isMobile = useDeviceType()

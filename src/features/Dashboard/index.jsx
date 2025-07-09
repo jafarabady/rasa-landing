@@ -8,8 +8,8 @@ import Stats from './components/Stats'
 import Pricing from './components/Pricing'
 import OurServices from './components/OurServices'
 import CreatingProject from './components/CreatingProject'
-import lineProject from '../../assets/images/line-project.png'
-import lineFaq from '../../assets/images/line-faq.png'
+import lineProject from '../../assets/images/project/line-project.png'
+import lineFaq from '../../assets/images/faq/line-faq.png'
 import CommandLine from './components/CommandLine'
 import Monitoring from './components/Monitoring'
 import { useDeviceType } from '../../hooks/use-device-type'
@@ -66,16 +66,16 @@ function Home() {
           <Technologies />
         </div>
       </Container>
-      <div className="relative mt-40 w-full">
-        <div className="hidden md:block absolute top-0 left-0 w-full z-0">
+      <div className="relative my-16 md:mb-52 md:mt-32 w-full z-10">
+        <div className="hidden md:block absolute top-0 left-0 w-full z-[1]">
           <img
             draggable="false"
             src={lineFaq}
             alt="lineProject"
-            className="pointer-events-none w-full"
+            className="pointer-events-none w-full rotate-180"
           />
         </div>
-        <div className="relative z-10">
+        <div className="relative z-10 md:pt-28">
           <Container>
             <FAQ />
           </Container>

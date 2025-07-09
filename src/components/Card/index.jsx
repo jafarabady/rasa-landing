@@ -1,5 +1,5 @@
 import './index.css'
-import background from '../../assets/images/card-background.png'
+import background from '../../assets/images/card/card-background.png'
 function Card({ type, icon, text, value }) {
   return (
     <div

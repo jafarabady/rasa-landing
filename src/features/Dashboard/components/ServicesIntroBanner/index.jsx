@@ -1,5 +1,5 @@
 import Button from '../../../../components/Button'
-import banner from '../../../../assets/images/intro-banner.png'
+import banner from '../../../../assets/images/intro/intro-banner.png'
 function ServicesIntroBanner() {
   return (
     <div className="relative flex flex-col-reverse md:flex-row justify-between items-center">

@@ -1,7 +1,7 @@
 import { faqData } from '../../lib'
 import React, { useState } from 'react'
 import Accordion from '../../../../components/Accordion'
-import faqBanner from '../../../../assets/images/faq-banner.png'
+import faqBanner from '../../../../assets/images/faq/faq-banner.png'
 
 function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
@@ -19,8 +19,8 @@ function FAQ() {
         برای ایجاد پروژه جدید مراحل زیر را نیاز است طی کنید.
       </span>
 
-      <div className="flex flex-col md:flex-row items-start justify-center pt-10 gap-10 px-4">
-        <div className="hidden md:block w-full max-w-sm md:max-w-md flex-shrink-0">
+      <div className="flex flex-col md:flex-row items-end justify-center pt-10 gap-10 px-4">
+        <div className="hidden md:block w-full max-w-sm md:max-w-sm flex-shrink-0">
           <img src={faqBanner} alt="" className="w-full h-auto object-contain" />
         </div>
 

@@ -3,7 +3,7 @@ import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import './index.css'
 import { EffectCoverflow } from 'swiper/modules'
-import statistics from '../../../../../assets/images/statistics.png'
+import statistics from '../../../../../assets/images/slider/statistics.png'
 import { cardsData } from '../../../lib'
 
 function ThreeDSlider() {

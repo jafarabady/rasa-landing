@@ -1,5 +1,5 @@
-import bannerDesc from '../../../../assets/images/command-line-desc.png'
-import bannerMob from '../../../../assets/images/command-line-mob.png'
+import bannerDesc from '../../../../assets/images/command-line/command-line-desc.png'
+import bannerMob from '../../../../assets/images/command-line/command-line-mob.png'
 function CommandLine() {
   return (
     <>

@@ -1,5 +1,5 @@
-import firstBanner from '../../../../assets/images/customer-apps-1.png'
-import secondBanner from '../../../../assets/images/customer-apps-2.png'
+import firstBanner from '../../../../assets/images/customer/customer-apps-1.png'
+import secondBanner from '../../../../assets/images/customer/customer-apps-2.png'
 function CustomerApps() {
   return (
     <>

@@ -1,11 +1,11 @@
 import Container from '../Container'
-import logo from '../../assets/images/cubaar-logo.svg'
+import logo from '../../assets/images/logo/cubaar-logo.svg'
 import { media, quickAccess, services } from '../../lib'
 import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <div className="w-full bg-dark pt-6 pb-20 mt-72">
+    <div className="w-full bg-dark pt-6 pb-20 ">
       <Container className="flex flex-col md:flex-row gap-16 justify-center items-start !px-14 md:px-4">
         <div className=" flex flex-col gap-3">
           <div className="min-w-[200px] max-w-[200px]">

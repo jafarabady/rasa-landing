@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import logo from '../../assets/images/cubaar-logo.svg'
-import searchIcon from '../../assets/images/search-icon.svg'
+import logo from '../../assets/images/logo/cubaar-logo.svg'
+import searchIcon from '../../assets/images/icons/search-icon.svg'
 import { Link } from 'react-router-dom'
 import Button from '../Button'
 

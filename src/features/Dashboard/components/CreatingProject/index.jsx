@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../../../../assets/images/project-banner.svg'
+import banner from '../../../../assets/images/project/project-banner.svg'
 import ProjectCard from './ProjectCard'
 import Container from '../../../../components/Container'
 import { projectSteps } from '../../lib'
