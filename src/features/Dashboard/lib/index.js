@@ -40,6 +40,9 @@ import PostgreSQL from '../../../assets/images/technologies/PostgreSQL.png'
 import googleCloud from '../../../assets/images/technologies/googlecloud.png'
 import nodejs from '../../../assets/images/technologies/nodejs.png'
 import go from '../../../assets/images/technologies/go.png'
+import noteIcon from '../../../assets/images/first-step-project.svg'
+import hand from '../../../assets/images/hand.svg'
+import network from '../../../assets/images/network-person.svg'
 
 const features = [
   { text: 'سرویس‌های کانفیگ شده', icon: service },
@@ -69,7 +72,7 @@ const projectSteps = [
       'می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و \n' +
       'متخصصان را می طلبد.',
     step: 'مرحله اول',
-    icon: service,
+    icon: noteIcon,
   },
   {
     text:
@@ -79,7 +82,7 @@ const projectSteps = [
       'می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و \n' +
       'متخصصان را می طلبد.',
     step: 'مرحله دوم',
-    icon: service,
+    icon: hand,
   },
   {
     text:
@@ -89,7 +92,7 @@ const projectSteps = [
       'می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و \n' +
       'متخصصان را می طلبد.',
     step: 'مرحله سوم',
-    icon: service,
+    icon: network,
   },
 ]
 

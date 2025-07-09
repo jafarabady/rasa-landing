@@ -16,7 +16,7 @@ function CreatingProject() {
           <div className="flex flex-col gap-16">
             {projectSteps.map((item) => (
               <React.Fragment key={item.step}>
-                <ProjectCard stepText={item.step} text={item.text} />
+                <ProjectCard icon={item.icon} stepText={item.step} text={item.text} />
               </React.Fragment>
             ))}
           </div>
